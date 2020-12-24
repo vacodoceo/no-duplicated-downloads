@@ -1,0 +1,20 @@
+{
+  "author": "Verner Codoceo",
+  "manifest_version": 2,
+  "name": "No duplicated downloads",
+  "version": "1.0.0",
+  "description": "Chrome extension that prevents duplicated downloads",
+  "background": {
+    "scripts": ["src/index.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "No duplicated downloads settings",
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "16": "icons/icon.png",
+      "32": "icons/icon.png"
+    }
+  },
+  "permissions": ["downloads"]
+}
